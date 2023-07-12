@@ -9,6 +9,36 @@
     <script defer src="main.js"></script>
 </head>
 <body>
+    <h1>Collection Tracker</h1>
+        <form id="addItemForm">
+            <label for="nameInput">Item Name:</label>
+            <input type="text" id="nameInput" name="nameInput" required><br>
     
-</body>
-</html>
+            <label for="imageInput">Image URL:</label>
+            <input type="text" id="imageInput" name="imageInput" required><br>
+    
+            <label for="descriptionInput">Description:</label>
+            <textarea id="descriptionInput" name="descriptionInput" required></textarea><br>
+    
+            <label for="valueInput">Value:</label>
+            <input type="number" id="valueInput" name="valueInput" required><br>
+    
+            <label for="categoryInput">Category:</label>
+            <select id="categoryInput" name="categoryInput">
+                <option value="pokemon">Pokemon</option>
+                <option value="funkos">Funkos</option>
+                <option value="yugioh">Yu-Gi-Oh</option>
+                <!-- Add more options as needed -->
+            </select><br>
+    
+            <button type="submit">Add Item</button>
+        </form>
+    
+        <div id="itemList"></div>
+    
+        <button id="calculateTotal">Calculate Total Value</button>
+        <div id="totalValue"></div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
