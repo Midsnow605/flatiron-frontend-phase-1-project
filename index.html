@@ -11,6 +11,9 @@
 <body>
     <header><h1>Collection Tracker</h1></header>
     <main>
+        <button id="calculateTotal">Calculate Total Value</button>
+        <div id="totalValue"></div>
+    
         <form id="addItemForm">
             <label for="nameInput">Item Name:</label>
             <input type="text" id="nameInput" name="nameInput" required><br>
@@ -30,19 +33,15 @@
                 <option value="funkos">Funkos</option>
                 <option value="yugioh">Yu-Gi-Oh</option>
                 <!-- Add more options as needed -->
-            </select><br>
-    
+            </select><br></main>
             <button type="submit">Add Item</button>
         </form>
-    
-        <div id="itemList"></div>
-    
-        <button id="calculateTotal">Calculate Total Value</button>
-        <div id="totalValue"></div>
-    
-        <script src="script.js"></script></main>
+    <div id="itemList"></div>
+        <script src="script.js"></script>
+        <h1>Collection!</h1>
         <footer>
-            
+            <p>Copyright Jose Gutierrez 2023</p>
+            <a href="top">End of list</a>
         </footer>
     </body>
     </html>
