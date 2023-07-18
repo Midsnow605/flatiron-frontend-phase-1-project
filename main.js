@@ -1,19 +1,19 @@
 // Initialize an empty array to store the submitted items
-var items = [];
+let items = [];
 
 // Function to handle form submission
 function addItem(event) {
   event.preventDefault(); // Prevent form submission's default behavior
 
   // Get the form input values
-  var name = document.getElementById('nameInput').value;
-  var image = document.getElementById('imageInput').value;
-  var description = document.getElementById('descriptionInput').value;
-  var value = parseFloat(document.getElementById('valueInput').value);
-  var category = document.getElementById('categoryInput').value;
+  const name = document.getElementById('nameInput').value;
+  const image = document.getElementById('imageInput').value;
+  const description = document.getElementById('descriptionInput').value;
+  const value = parseFloat(document.getElementById('valueInput').value);
+  const category = document.getElementById('categoryInput').value;
 
   // Create an object to represent the item
-  var item = {
+  let item = {
     name: name,
     image: image,
     description: description,
@@ -37,24 +37,24 @@ function addItem(event) {
 
 // Function to display the items on the DOM
 function displayItems() {
-  var itemListDiv = document.getElementById('itemList');
+  const itemListDiv = document.getElementById('itemList');
   itemListDiv.innerHTML = ''; // Clear the previous content
 
   // Loop through the items array and create HTML elements for each item
   items.forEach(function(item) {
-    var itemDiv = document.createElement('div');
+    const itemDiv = document.createElement('div');
     itemDiv.classList.add('item');
 
-    var itemImage = document.createElement('img');
+    const itemImage = document.createElement('img');
     itemImage.src = item.image;
     itemImage.alt = item.name;
     itemDiv.appendChild(itemImage);
 
-    var itemName = document.createElement('h3');
+    const itemName = document.createElement('h3');
     itemName.textContent = item.name;
     itemDiv.appendChild(itemName);
 
-    var itemDescription = document.createElement('p');
+    const itemDescription = document.createElement('p');
     itemDescription.textContent = item.description;
     itemDiv.appendChild(itemDescription);
 
@@ -63,12 +63,12 @@ function displayItems() {
 }
 
 // Event listener for form submission
-var addItemForm = document.getElementById('addItemForm');
+const addItemForm = document.getElementById('addItemForm');
 addItemForm.addEventListener('submit', addItem);
 
 // Calculate total value function
 function calculateTotalValue() {
-  var totalValue = items.reduce(function(acc, item) {
+  let totalValue = items.reduce(function(acc, item) {
     return acc + item.value;
   }, 0);
 
@@ -76,5 +76,5 @@ function calculateTotalValue() {
 }
 
 // Event listener for the "Calculate Total Value" button
-var calculateTotalButton = document.getElementById('calculateTotal');
+const calculateTotalButton = document.getElementById('calculateTotal');
 calculateTotalButton.addEventListener('click', calculateTotalValue);
