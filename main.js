@@ -1,3 +1,65 @@
+// Function to fetch data from the server and update the items array
+function fetchData() {
+    fetch('http://localhost:3000/items')
+      .then((response) => response.json())
+      .then((data) => {
+        items = data;
+        displayItems();
+      })
+      .catch((error) => {
+        console.log('Error fetching data:', error);
+      });
+  }
+  
+  // Function to send a new item to the server for storage
+  function addItemToServer(item) {
+    fetch('http://localhost:3000/items', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(item)
+    })
+      .then(() => {
+        console.log('Item added successfully!');
+        fetchData(); // Fetch updated data after adding the item
+      })
+      .catch((error) => {
+        console.log('Error adding item:', error);
+      });
+  }
+  
+  // Function to update an existing item on the server
+  function updateItemOnServer(itemId, updatedItem) {
+    fetch(`http://localhost:3000/items/${itemId}`, {
+      method: 'PUT', // Use 'PUT' or 'PATCH' depending on your server's API design
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(updatedItem)
+    })
+      .then(() => {
+        console.log('Item updated successfully!');
+        fetchData(); // Fetch updated data after updating the item
+      })
+      .catch((error) => {
+        console.log('Error updating item:', error);
+      });
+  }
+  
+  // Function to delete an item from the server
+  function deleteItemFromServer(itemId) {
+    fetch(`http://localhost:3000/items/${itemId}`, {
+      method: 'DELETE',
+    })
+      .then(() => {
+        console.log('Item deleted successfully!');
+        fetchData(); // Fetch updated data after deleting the item
+      })
+      .catch((error) => {
+        console.log('Error deleting item:', error);
+      });
+  }  
 // Initialize an empty array to store the submitted items
 let items = [];
 
