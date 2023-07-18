@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase 1 Project</title>
+    <title>Collection Tracker</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -13,7 +13,7 @@
     <main>
         <button id="calculateTotal">Calculate Total Value</button>
         <div id="totalValue"></div>
-    
+
         <form id="addItemForm">
             <label for="nameInput">Item Name:</label>
             <input type="text" id="nameInput" name="nameInput" required><br>
@@ -26,7 +26,7 @@
     
             <label for="valueInput">Value:</label>
             <input type="number" id="valueInput" name="valueInput" required><br>
-    
+            
             <label for="categoryInput">Category:</label>
             <select id="categoryInput" name="categoryInput">
                 <option value="pokemon">Pokemon</option>
@@ -36,13 +36,13 @@
             </select><br>
             <button type="submit">Add Item</button>
         </form>
+        
+        <div id="itemList" class="card-container"></div>
     </main>
-    <div id="itemList"></div>
-        <script src="script.js"></script>
-        <h1>Collection!</h1>
-        <footer>
-            <p>Copyright Jose Gutierrez 2023</p>
-            <a href="#top">End of list</a>
-        </footer>
-    </body>
-    </html>
+
+    <footer>
+        <p>Copyright Jose Gutierrez 2023</p>
+        <a href="#top">End of list</a>
+    </footer>
+</body>
+</html>
