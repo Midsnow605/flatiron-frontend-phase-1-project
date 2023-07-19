@@ -75,7 +75,7 @@ function addItem(event) {
   const category = document.getElementById('categoryInput').value;
 
   // Create an object to represent the item
-  let item = {
+  const item = {
     name: name,
     image: image,
     description: description,
@@ -83,8 +83,8 @@ function addItem(event) {
     category: category
   };
 
-  // Push the item to the array
-  items.push(item);
+  // Send the new item to the server for storage
+  addItemToServer(item);
 
   // Clear the form inputs
   document.getElementById('nameInput').value = '';
@@ -92,10 +92,10 @@ function addItem(event) {
   document.getElementById('descriptionInput').value = '';
   document.getElementById('valueInput').value = '';
   document.getElementById('categoryInput').value = '';
+}
 
   // Update the DOM to display the items
   displayItems();
-}
 
 // Function to display the items on the DOM
 function displayItems() {
