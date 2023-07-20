@@ -3,7 +3,11 @@ let items = [];
 
 // Function to fetch data from the server and update the items array
 function fetchData() {
-  fetch('http://localhost:3000/items')
+  fetch("http://localhost:3000/items", {
+    headers: {
+      'Accept': 'application/json', // Requesting JSON response
+    },
+  })
     .then((response) => response.json())
     .then((data) => {
       items = data;
@@ -16,12 +20,13 @@ function fetchData() {
 
 // Function to send a new item to the server for storage
 function addItemToServer(item) {
-  fetch('http://localhost:3000/items', {
+  fetch("http://localhost:3000/items", {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json', // Sending JSON data
+      'Accept': 'application/json', // Expecting JSON response
     },
-    body: JSON.stringify(item)
+    body: JSON.stringify(item),
   })
     .then(() => {
       console.log('Item added successfully!');
@@ -36,6 +41,9 @@ function addItemToServer(item) {
 function deleteItemFromServer(itemId) {
   fetch(`http://localhost:3000/items/${itemId}`, {
     method: 'DELETE',
+    headers: {
+      'Accept': 'application/json', // Expecting JSON response
+    },
   })
     .then(() => {
       console.log('Item deleted successfully!');
