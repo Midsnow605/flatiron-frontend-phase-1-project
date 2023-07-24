@@ -1,28 +1,44 @@
 {
   "items": [
     {
-      "id": 1,
-      "name": "Item 1",
-      "image": "item1.jpg",
-      "description": "This is item 1",
-      "value": 10.99,
-      "category": "Category A"
+      "name": "EAZY-E",
+      "image": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwd6a5e49e/images/funko/70166-1.png?sw=800&sh=800",
+      "description": "POP! ERIC \"EAZY-E\" WRIGHT",
+      "value": 15,
+      "category": "pokemon",
+      "id": 5
     },
     {
-      "id": 2,
-      "name": "Item 2",
-      "image": "item2.jpg",
-      "description": "This is item 2",
-      "value": 20.5,
-      "category": "Category B"
+      "name": "charizard ",
+      "image": "https://m.media-amazon.com/images/I/71nbfl-JklS.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+      "description": "dragon",
+      "value": 60,
+      "category": "pokemon",
+      "id": 6
     },
     {
-      "id": 3,
-      "name": "Item 3",
-      "image": "item3.jpg",
-      "description": "This is item 3",
-      "value": 5.75,
-      "category": "Category A"
+      "name": "Blastoiose",
+      "image": "https://m.media-amazon.com/images/I/51+fwRswVVL._AC_.jpg",
+      "description": "Set 2 blastoise base set",
+      "value": 117,
+      "category": "pokemon",
+      "id": 7
+    },
+    {
+      "name": "Snorlax",
+      "image": "https://product-images.tcgplayer.com/fit-in/1170x1170/241875.jpg",
+      "description": "Golden boi Snorlax (Secret) - SWSH06: Chilling Reign (SWSH06)",
+      "value": 71,
+      "category": "pokemon",
+      "id": 8
+    },
+    {
+      "name": "Perfect Cell",
+      "image": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw4606323c/images/funko/3992-1.png?sw=800&sh=800",
+      "description": "DRAGON BALL Z\nPOP! PERFECT CELL",
+      "value": 12,
+      "category": "funkos",
+      "id": 9
     }
   ]
 }
