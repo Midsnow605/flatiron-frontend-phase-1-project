@@ -1,3 +1,28 @@
 {
-    "items": []
-  }
+  "items": [
+    {
+      "id": 1,
+      "name": "Item 1",
+      "image": "item1.jpg",
+      "description": "This is item 1",
+      "value": 10.99,
+      "category": "Category A"
+    },
+    {
+      "id": 2,
+      "name": "Item 2",
+      "image": "item2.jpg",
+      "description": "This is item 2",
+      "value": 20.5,
+      "category": "Category B"
+    },
+    {
+      "id": 3,
+      "name": "Item 3",
+      "image": "item3.jpg",
+      "description": "This is item 3",
+      "value": 5.75,
+      "category": "Category A"
+    }
+  ]
+}
