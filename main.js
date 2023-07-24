@@ -39,7 +39,7 @@ function addItemToServer(item) {
 
 // Function to delete an item from the server
 function deleteItemFromServer(itemId) {
-  fetch(`http://localhost:3000/items/${itemId}`, {
+  fetch(`http://localhost:3000/items/${itemId}`, { // Add backticks around the URL
     method: 'DELETE',
     headers: {
       'Accept': 'application/json', // Expecting JSON response
