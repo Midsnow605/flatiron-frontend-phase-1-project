@@ -1,22 +1,123 @@
-body {
-    background-color: rgb(0, 255, 153);
-}
 /* styles.css */
+
+/* Body styles */
+body {
+  background-color: rgb(0, 255, 153);
+}
 
 /* Center align the header */
 header {
-    text-align: center;
-  }
-  
-  /* Center align the main content */
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Center align the footer */
-  footer {
-    text-align: center;
-  }
+  text-align: center;
+}
+
+/* Center align the main content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center align the footer */
+footer {
+  text-align: center;
+}
+
+/* Item card styles */
+.item-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.item-card h3 {
+  margin: 0;
+}
+
+.item-card p {
+  margin-bottom: 5px;
+}
+
+/* Delete button styles */
+.delete-button {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Calculate Total Value button styles */
+#calculateTotal {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Total Value display styles */
+#totalValue {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Form styles */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px;
+}
+
+/* Navigation link in the footer */
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
